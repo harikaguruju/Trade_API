@@ -30,7 +30,7 @@ An AI-powered web application that analyzes market sectors and generates structu
 ---
 
 ## 📂 Project Structure
----
+```text
 📦 AI-Market-Analysis-Dashboard
 │
 ├── backend/
