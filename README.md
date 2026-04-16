@@ -46,3 +46,7 @@ An AI-powered web application that analyzes market sectors and generates structu
 ├── .env                     # API keys
 ├── LICENSE                  # MIT License
 └── README.md                # Documentation
+
+## 🌐 Live Demo
+
+👉 https://trade-api-kby2.onrender.com
