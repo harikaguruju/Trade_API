@@ -30,7 +30,7 @@ An AI-powered web application that analyzes market sectors and generates structu
 ---
 
 ## 📂 Project Structure
-📦 AI-Market-Analysis-Dashboard
+---📦 AI-Market-Analysis-Dashboard
 │
 ├── backend/
 │   └── main.py              # FastAPI backend (API logic)
@@ -45,3 +45,4 @@ An AI-powered web application that analyzes market sectors and generates structu
 ├── .env                     # API keys
 ├── LICENSE                  # MIT License
 └── README.md                # Documentation
+---
