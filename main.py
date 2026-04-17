@@ -65,16 +65,22 @@ VALID_SECTORS = ["healthcare", "technology", "finance", "education", "energy"]
 # FETCH NEWS (REAL-TIME)
 # -------------------------------
 def fetch_news(sector):
+    api_key = os.getenv("GNEWS_API_KEY")
+
+    url = f"https://gnews.io/api/v4/search?q={sector}&lang=en&max=5&token={api_key}"
+
     try:
-        url = f"https://api.publicapis.org/entries"
-        res = requests.get(url)
-        data = res.json()
+        response = requests.get(url)
+        data = response.json()
 
-        entries = data.get("entries", [])[:5]
-        return [e["Description"] for e in entries]
+        articles = data.get("articles", [])
+        titles = [a["title"] for a in articles if "title" in a]
 
-    except:
-        return ["Real-time data temporarily unavailable"]
+        return titles if titles else ["No real-time data found"]
+
+    except Exception as e:
+        print("ERROR:", e)
+        return ["Error fetching real-time data"]
 
 # -------------------------------
 # ROUTES
