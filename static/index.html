@@ -73,7 +73,7 @@ button:hover {
 }
 
 /* DASHBOARD */
-.dashboard { display: none; }
+.dashboard { display: block; }
 
 .sidebar {
     width: 220px;
@@ -154,19 +154,6 @@ canvas { margin-top: 15px; }
 
 <body>
 
-<!-- LOGIN -->
-<div class="login" id="loginPage">
-    <div class="login-box">
-        <h3>Login</h3>
-        <div class="hint">Username: admin | Password: 123</div>
-
-        <input id="username" placeholder="Enter username">
-        <input id="password" type="password" placeholder="Enter password">
-
-        <button onclick="login()">Login</button>
-    </div>
-</div>
-
 <!-- DASHBOARD -->
 <div class="dashboard" id="dashboard">
 
@@ -176,7 +163,6 @@ canvas { margin-top: 15px; }
 </div>
 
 <div class="main">
-
 <h2>Market Analysis</h2>
 
 <div class="top-cards" id="stats">
@@ -224,19 +210,6 @@ canvas { margin-top: 15px; }
 <script>
 
 let chart;
-
-/* ================= LOGIN ================= */
-function login() {
-    if (
-        document.getElementById("username").value === "admin" &&
-        document.getElementById("password").value === "123"
-    ) {
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("dashboard").style.display = "block";
-    } else {
-        alert("Invalid credentials");
-    }
-}
 
 /* ================= REAL MARKET DATA ================= */
 function getMarketData(sector) {
