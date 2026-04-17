@@ -34,7 +34,6 @@ An AI-powered web application that analyzes market sectors and generates structu
 ---
 
 ## 📂 Project Structure
-
 ```text
 📦 AI-Market-Analysis-Dashboard
 │
@@ -51,8 +50,8 @@ An AI-powered web application that analyzes market sectors and generates structu
 ├── .env                     # API keys
 ├── LICENSE                  # MIT License
 └── README.md                # Documentation
-```**
+```
 
-```markdown
-👉 [Open Live Dashboard](https://trade-api-kby2.onrender.com)
+## 🌐 Live Demo
 
+👉 https://trade-api-kby2.onrender.com
